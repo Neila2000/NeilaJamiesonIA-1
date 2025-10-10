@@ -1,0 +1,398 @@
+/*Neila Jamieson 2007748*/
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background:rgb(250, 243, 243);
+}
+
+header, nav {
+  background: linear-gradient(to right, rgb(246, 193, 193), rgb(247, 217, 185));
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;  
+  align-items: center;
+  margin: 0;
+  padding: 0 30px;                
+  min-height: 65px;               
+  width: 100%;
+  border-radius: 0;
+  box-sizing: border-box;           
+}
+.nav-logo {
+  height: 50px; 
+  width: auto;
+  display: block;
+}
+
+
+nav a {
+  color: rgb(74, 59, 59);
+  text-decoration: none;
+  display: block;
+  padding: 10px 14px;
+  font-weight: normal;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+nav a:hover {
+  background: linear-gradient(to right, rgb(246, 193, 193), rgb(247, 217, 185));
+}
+
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 24px auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+section {
+  background: linear-gradient(to bottom, rgb(255, 246, 243), rgb(254, 239, 231));
+  border: 1px solid oklab(91.07600000000001% 0.02837 0.02155);
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.card {
+  background: linear-gradient(to right, #F6C1C1, #F7D9B9);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  color: #4A3B3B;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  margin: 40px auto;            
+  width: 70%;                  
+  max-width: 850px;             
+}
+
+
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.profile {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-img {
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid #FFF;
+  box-shadow: 0 8px 18px rgba(0,0,0,.2);
+  transition: transform .2s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+.profile figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  text-align: center;
+  color: black;
+}
+.demographics {
+  flex: 2;
+}
+
+.demographics h2 {
+  margin-top: 0;
+  font-size: 22px;
+  color: black;
+}
+
+.demographics ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+.demographics li {
+  margin: 6px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: black;
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;          
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.btn {
+  background: linear-gradient(to right, #F6C1C1, #F7D9B9);
+  color: #4A3B3B;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: Georgia, serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  background: linear-gradient(to right, #F7D9B9, #F6C1C1);
+}
+
+a:active {
+  color: #F6C1C1;
+  text-decoration: none;
+}
+
+a{
+  color: black;
+}
+
+.vision h2 {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p{
+  color: black;
+  font-size: 18px;
+  font-family: Georgia, serif;
+}
+
+.personality h2{
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.personality ol{
+  color: black;
+  font-size: 18px;
+  font-family: Georgia, serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.ai h2{
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Personal Development Section */
+.personalHeaderText {
+  text-align: center;
+  font-size: 28px;
+  color: #4A3B3B;
+  margin-top: 20px;
+  font-weight: bold;
+} 
+
+#personalDevelopment img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0,0,0,.2);
+}
+.bookHeader {
+  text-align: center;
+  font-size: 24px;
+  color: #4A3B3B;
+  margin-top: 16px;
+}
+.bookHeader span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Favourite table Section */
+.favorites-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.favorites-table {
+  width: 60%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.favorites-table th, 
+.favorites-table td {
+  border: 1px solid #000;
+  padding: 12px;
+  text-align: center;
+}
+
+.favorites-table th {
+  background: linear-gradient(to right, rgb(246, 193, 193), rgb(247, 217, 185));
+  color: ddd;
+}
+
+.favorites-table img {
+  width: 100px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.favorites-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Footer */
+
+footer {
+  background: linear-gradient(to right, rgb(246, 193, 193), rgb(247, 217, 185));
+  color: #ddd;
+  text-align: center;
+  padding: 12px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive screens */
+
+/* Tablets (<= 768px) */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  .card-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 180px;
+  }
+
+  .demographics ul li {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
+
+/* Phones (<= 480px) */
+@media (max-width: 480px) {
+
+ 
+  header,nav {
+    background: transparent;
+    position: static;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    margin: 0 auto 30px auto; 
+    text-align: center;
+    border-radius: 0 0 12px 12px;
+    
+  }
+  nav{
+    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    list-style: none;
+  }
+
+  .nav-logo {
+    height: 45px;
+    width: auto;
+    margin-bottom: 8px;
+  }
+
+  nav a {
+    font-size: 16px;
+    color: rgb(74, 59, 59);
+    text-decoration: none;
+    padding: 6px 10px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+
+  nav a:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  body {
+    margin-top: 15px;
+  }
+
+  .card {
+    width: 80%;
+    padding: 16px;
+    margin: 20px auto;
+  }
+
+  .profile-img {
+    width: 150px;
+  }
+
+  p, li {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
